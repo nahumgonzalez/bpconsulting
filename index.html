@@ -11,25 +11,39 @@
 
     <header>
         <img src="bpl.svg" alt="BP Consulting Logo" class="logo">
-        <h1>Optimización Fiscal en la Compra y Venta de Inmuebles Adjudicados</h1>
+        <h1>Optimización Fiscal en la Compra y Venta de Inmuebles</h1>
         <p>Especialistas en estrategias fiscales para maximizar tus beneficios y minimizar la carga tributaria.</p>
-        <button class="cta-btn">Solicita una Consulta Gratuita</button>
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link
+            href="https://calendar.google.com/calendar/scheduling-button-script.css"
+            rel="stylesheet"
+        />
+        <script
+            src="https://calendar.google.com/calendar/scheduling-button-script.js"
+            async
+        ></script>
+        <script>
+            (function () {
+                var target = document.currentScript;
+                window.addEventListener("load", function () {
+                    calendar.schedulingButton.load({
+                        url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1vVVaw1zesbhb88XHejCf6k668dFwQVq1jpHzvN8KJuIF6E4NZMDIhBhZUiezMq78rmfBoORdb?gv=true",
+                        color: "#005b99",
+                        label: "Solicita una Consulta Gratuita",
+                        target,
+                    });
+                });
+            })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
     </header>
-
-    <!-- Carrusel Section -->
-    <section class="carousel">
-        <!-- video image carousel -->
-        <div class="carousel-container">
-            <!-- controls -->
-        </div>
-    </section>
 
     <!-- Services Section -->
     <section class="services">
         <h2>Servicios</h2>
         <div class="service-card">
             <h3>Avalúo Fiscal para Optimización de ISR e ISAI</h3>
-            <p>Te ayudamos a optimizar los pagos ajustando el avalúo fiscal al valor de compra del inmueble.</p>
+            <p>Te ayudamos a optimizar los pagos fiscales en la compra del inmueble.</p>
             <ul>
                 <li>Reducción del ISR en compras por debajo del valor de mercado.</li>
                 <li>Optimización del ISAI.</li>
@@ -37,11 +51,15 @@
             </ul>
         </div>
         <div class="service-card">
-            <h3>Estrategias Fiscales para la Compra de Inmuebles Adjudicados</h3>
-            <p>Desarrollamos estrategias fiscales que maximizan tus ahorros al adquirir inmuebles adjudicados.</p>
+            <h3>Consultoría inherente a la Compra - Venta de un inmueble</h3>
+            <p>Nos encargamos de gestionar todos los trámites fiscales necesarios para la compra y venta de inmuebles.</p>
         </div>
         <div class="service-card">
-            <h3>Consultoría en Trámites Fiscales Inmobiliarios</h3>
+            <h3>Trámite de inscripción ante RPP.</h3>
+            <p>Nos encargamos de gestionar todos los trámites fiscales necesarios para la compra y venta de inmuebles.</p>
+        </div>
+        <div class="service-card">
+            <h3>Solicitud de folio real ante el RPP.</h3>
             <p>Nos encargamos de gestionar todos los trámites fiscales necesarios para la compra y venta de inmuebles.</p>
         </div>
         <button class="cta-btn">Solicita más información sobre nuestros servicios</button>
@@ -50,35 +68,43 @@
     <!-- FAQ Section with Accordion -->
     <section id="faq" class="preguntas-frecuentes">
         <h2>Preguntas frecuentes</h2>
-
         <div class="accordion">
             <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false">
+                <button class="accordion-button" aria-expanded="false">
                     <span class="accordion-title">Sobre Nosotros</span>
                     <span class="icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion-content">
-                    <p>En [Nombre del Despacho], somos un equipo de profesionales con años de experiencia...</p>
+                    <p>En BP Consulting, somos un equipo de profesionales con años de experiencia...</p>
                 </div>
             </div>
 
             <div class="accordion-item">
-                <button id="accordion-button-2" aria-expanded="false">
+                <button class="accordion-button" aria-expanded="false">
                     <span class="accordion-title">Requisitos</span>
                     <span class="icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion-content">
-                    <p>Para ofrecerte el mejor servicio, necesitamos la siguiente documentación...</p>
+                    <p>Para ofrecerte el mejor servicio, necesitamos la siguiente documentación:</p>
+                    <ul class="requirements">
+                        <li>Boleta Predial: Indica el valor catastral del inmueble.</li>
+                        <li>Boleta de Agua: Comprobante de servicios públicos.</li>
+                        <li>Copia de la Escritura de Propiedad: Incluye superficie, medidas y colindancias.</li>
+                        <li>Planos Arquitectónicos (si disponibles).</li>
+                        <li>Datos del Solicitante: RFC y nombre completo.</li>
+                        <li>Datos de la Notaría: Número de la notaría y nombre del titular.</li>
+                        <li>Cotización de la Notaría: Para comparar con los cálculos fiscales.</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="accordion-item">
-                <button id="accordion-button-3" aria-expanded="false">
+                <button class="accordion-button" aria-expanded="false">
                     <span class="accordion-title">¿Cómo Funciona?</span>
                     <span class="icon" aria-hidden="true"></span>
                 </button>
                 <div class="accordion-content">
-                    <p>En [Nombre del Despacho], simplificamos el proceso para garantizarte una experiencia sin complicaciones...</p>
+                    <p>En BP Consulting, simplificamos el proceso para garantizarte una experiencia sin complicaciones...</p>
                 </div>
             </div>
         </div>
@@ -88,31 +114,30 @@
     <section class="success-stories">
         <h2>Casos de Éxito</h2>
         <div class="success-card">
-            <p>"Gracias a [Nombre del Despacho], logramos reducir nuestra carga fiscal en un 20%..."</p>
+            <p>"Gracias a BP Consulting, logramos reducir nuestra carga fiscal en un 20%..."</p>
             <p class="success-client">— Carlos G., Cliente Satisfecho</p>
         </div>
         <div class="success-card">
-            <p>"Con la ayuda de [Nombre del Despacho], ajustamos el avalúo fiscal de un inmueble..."</p>
+            <p>"Con la ayuda de BP Consulting, ajustamos el avalúo fiscal de un inmueble..."</p>
             <p class="success-client">— María L., Empresaria Inmobiliaria</p>
         </div>
     </section>
 
-    	<!-- Formulario de contacto -->
-	<section class="contacto">
-		<h2>¿Tienes alguna pregunta? Estamos aquí para ayudarte. </h2>
+    <!-- Formulario de contacto -->
+    <section class="contacto">
+        <h2>¿Tienes alguna pregunta? Estamos aquí para ayudarte.</h2>
         <p><strong>Contáctanos.</strong></p>
-		<form action="submit_form.php" method="POST">
-			<label for="name">Nombre:</label>
-			<input type="text" id="name" name="name" required>
-			<label for="email">Correo electrónico:</label>
-			<input type="email" id="email" name="email" required>
-			<label for="message">Mensaje:</label>
-			<textarea id="message" name="message" required></textarea>
-			<button type="submit">Enviar</button>
-		</form>
-	</section>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
-    <!-- Footer Section -->
     <footer>
         <div class="footer-columns">
             <div class="footer-column">
