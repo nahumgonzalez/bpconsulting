@@ -26,7 +26,8 @@ p {
     font-size: 1.1rem;
 }
 
-.cta-btn {
+/* Google Calendar button styling */
+.scheduling-button button {
     padding: 10px 20px;
     background-color: #005b99;
     color: white;
@@ -36,20 +37,19 @@ p {
     border-radius: 5px;
 }
 
-.cta-btn:hover {
+.scheduling-button button:hover {
     background-color: #004080;
 }
 
 /* Services Section */
 .services {
     padding: 40px;
-    background-color: white;
-    text-align: center;
+    text-align: left;
 }
 
 .services h2 {
     color: #003366;
-    font-size: 2rem;
+    font-size: 20rem;
 }
 
 .service-card {
@@ -58,16 +58,21 @@ p {
     margin: 20px auto;
     max-width: 800px;
     text-align: left;
-    border-radius: 10px;
+    border-radius: 105px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* FAQ Accordion */
-.preguntas-frecuentes {
+.preguntas-frecuentes h2{
     padding: 60px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
+
+.preguntas-frecuentes ul{
+    list-style: none;
+}
+
 
 .accordion {
     max-width: 800px;
@@ -80,20 +85,33 @@ p {
     padding: 20px;
     cursor: pointer;
     border: none;
-    width: 100%;
+    width: 10%;
     text-align: left;
     font-size: 1.2rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.9s ease;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+.accordion-button:after {
+    content: '+';
+    font-size: 1.5rem;
+}
+
+.accordion-button[aria-expanded="true"]:after {
+    content: '-';
 }
 
 .accordion-content {
     display: none;
     padding: 20px;
-    background-color: #f4f4f4;
+    transition: max-height 0.9s ease;
 }
+
+.accordion-content.show {
+    display: block;
+}
+
 
 /* Success Stories */
 .success-stories {
