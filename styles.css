@@ -9,7 +9,8 @@ body {
 
 header {
     text-align: center;
-    background-color: #003366; /* Azul oscuro */
+    background-color: #003366;
+    /* Azul oscuro */
     color: white;
     padding: 60px 20px;
 }
@@ -44,12 +45,13 @@ p {
 /* Services Section */
 .services {
     padding: 40px;
-    text-align: left;
+    background-color: white;
+    text-align: center;
 }
 
 .services h2 {
     color: #003366;
-    font-size: 20rem;
+    font-size: 2rem;
 }
 
 .service-card {
@@ -58,21 +60,16 @@ p {
     margin: 20px auto;
     max-width: 800px;
     text-align: left;
-    border-radius: 105px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* FAQ Accordion */
-.preguntas-frecuentes h2{
+.preguntas-frecuentes {
     padding: 60px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
-
-.preguntas-frecuentes ul{
-    list-style: none;
-}
-
 
 .accordion {
     max-width: 800px;
@@ -85,12 +82,14 @@ p {
     padding: 20px;
     cursor: pointer;
     border: none;
-    width: 10%;
+    width: 100%;
     text-align: left;
     font-size: 1.2rem;
-    transition: background-color 0.9s ease;
+    transition: background-color 0.3s ease;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .accordion-button:after {
@@ -105,13 +104,14 @@ p {
 .accordion-content {
     display: none;
     padding: 20px;
-    transition: max-height 0.9s ease;
+    background-color: #f4f4f4;
+    transition: max-height 0.3s ease;
+    text-align: left;
 }
 
 .accordion-content.show {
     display: block;
 }
-
 
 /* Success Stories */
 .success-stories {
@@ -127,7 +127,7 @@ p {
     max-width: 800px;
     text-align: left;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .success-client {
